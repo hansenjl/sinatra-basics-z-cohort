@@ -2,7 +2,10 @@ require 'bundler/setup' #ability to require gems in gemfile through Bundler
 Bundler.require # require gems in gemfile
 
 require 'active_record'
-require_relative '../lib/song.rb' 
+# require_relative '../lib/song.rb' 
+# require_relative '../app.rb'
+require_all('app')
+
 # require_all('lib'), replaces line above 'require_relative '../lib/song.rb'
   #=> loads all files in lib folder
 
